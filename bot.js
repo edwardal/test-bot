@@ -5,9 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = "cool guy";
+      // botRegex = "cool guy";
 
-  if(request.text && request.text.indexOf(botRegex) > -1) {
+  if(request.text && (request.text.indexOf("Jeff") > -1 || request.text.indexOf("jeff") > -1)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
@@ -31,7 +31,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "I am now a sentient being"
+    "text" : "Who the fuck is Jeff?"
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
