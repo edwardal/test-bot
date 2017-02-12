@@ -5,9 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      // botRegex = "Jeff";
+      botRegex = "Jeff";
 
-  if(request.text && request.text != "Who the fuck is Jeff?" && (request.text.indexOf("Jeff") > -1 || request.text.indexOf("jeff") > -1) ) {
+  if(request.text && request.text != "Who the fuck is Jeff?" && (request.text.indexOf(botRegex) > -1 || request.text.indexOf(botRegex) > -1) ) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
