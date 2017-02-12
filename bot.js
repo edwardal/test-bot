@@ -31,7 +31,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "Test Response"
+    "text" : "I am now a sentient being"
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
