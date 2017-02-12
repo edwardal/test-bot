@@ -31,7 +31,7 @@ function postMessage() {
 
   body = {
     "bot_id" : botID,
-    "text" : "Who the fuck is Jeff?"
+    "text" : "Who the fuck is Geoff?"
   };
 
   console.log('sending ' + botResponse + ' to ' + botID);
