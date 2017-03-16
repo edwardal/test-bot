@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex1 = "JEff";
+      botRegex1 = "Jeff";
       botRegex2 = "jeff";
       botRegex3 = "JEFF";
 
