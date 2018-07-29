@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 function respond() {function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var botRegex = new RegExp('jeff', 'i');
-  if(request.text && request.text != "Who the fuck is Jeff?" && (botRegex.test(request.text)) {
+  if(request.text && request.text != "Who the fuck is Jeff?" && (botRegex.test(request.text))) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
